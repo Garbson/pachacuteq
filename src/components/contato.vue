@@ -97,6 +97,7 @@
             <button
               type="submit"
               class="bg-orange-400 text-white p-11 rounded-md hover:bg-green-600"
+              @click="handleSubmit"
             >
               Enviar
             </button>
@@ -129,6 +130,25 @@ const phone = "+51 974566883";
 const phone2 = "+51 123456789";
 const email = "hostalpachacuteqin@gmail.com";
 const email2 = "gerencia@hostalpachacuteqinn.com";
+
+const handleSubmit = async () => {
+  try {
+    const formData = new FormData(document.getElementById('contact-form'));
+    const response = await fetch('http://localhost:3000/enviar-email', {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (response.ok) {
+      alert('E-mail enviado com sucesso!');
+    } else {
+      alert('Erro ao enviar o e-mail. Por favor, tente novamente mais tarde.');
+    }
+  } catch (error) {
+    console.error('Erro ao enviar o e-mail:', error);
+  }
+};
+
 </script>
 
 <style scoped>

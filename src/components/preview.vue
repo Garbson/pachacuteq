@@ -6,7 +6,7 @@
       <a
         v-for="otherRoom in otherRooms"
         :key="otherRoom.id"
-        :href="`#${otherRoom.id}`"
+        :href="otherRoom.h"
       >
         <div
           class="other-room-preview flex mt-1 items-center p-2 border rounded-md shadow-xl"
@@ -30,29 +30,40 @@
 import { ref } from "vue";
 
 const otherRooms = ref([
+{
+    id: 1,
+    imageUrl: "/img/quartoS.jpg",
+    title: "Hab. simples",
+    price: "$60 soles/noche", 
+    h:"/simples"
+  },
   {
     id: 2,
-    imageUrl: "/img/quartoS.jpg",
+    imageUrl: "/img/quartoQ.jpg",
     title: "Hab. Cuaduple",
-    price: "$80/noite",
+    price: "$120 soles/noche", 
+    h:"/cuadruple"
   },
   {
     id: 3,
     imageUrl: "/img/QuartoF.jpg",
     title: "Hab. Matrimonial",
-    price: "$180/noite",
+    price: "$70 soles/noche",
+    h:"/matrimonial"
   },
   {
     id: 4,
-    imageUrl: "/img/quartoI.jpg",
+    imageUrl: "/img/quartoD.jpg",
     title: "Hab. Doble",
-    price: "$180/noite",
+    price: "$70 soles/noche",
+    h:"/doble"
   },
   {
     id: 5,
-    imageUrl: "/img/quartoT.jpg",
+    imageUrl: "/img/quartoI.jpg",
     title: "Hab. Triple",
-    price: "$180/noite",
+    price: "$100 soles/noche",
+    h:"/triple"
   },
 ]);
 </script>

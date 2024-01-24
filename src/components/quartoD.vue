@@ -4,12 +4,12 @@
     <headS class="h-screen"></headS>
     <div class="a bg-white p-8 rounded-lg shadow-lg flex justify-center">
       <preview class="p"></preview>
-      <div class="w-1/2 flex flex-col mx-5">
+      <div class="aa w-1/2 flex flex-col mx-5">
         <!-- Imagem do quarto -->
         <img
           :src="item.imageUrl"
           :alt="item.title"
-          class="a w-full h-auto object-cover mb-4 rounded-md shadow-md"
+          class=" w-full h-auto object-cover mb-4 rounded-md shadow-md"
         />
 
         <!-- Informações -->
@@ -29,7 +29,7 @@
               class="contain flex flex-col items-center mb-2 mr-4"
             >
               <!-- Flexbox vertical -->
-              <div class="w-20 h-16 mb-2 overflow-hidden">
+              <div class=" w-24 h-16 mb-2 overflow-hidden">
                 <!-- Ajuste da imagem -->
                 <img
                   :src="service.imageUrl"
@@ -57,7 +57,7 @@
 
   const item = ref({
     id: 1,
-    imageUrl: "img/quartoI.jpg",
+    imageUrl: "img/quartoD.jpg",
     title: "Habitación Doble",
     description:
       "Bienvenido al confort y la elegancia de nuestro cuarto doble. Este espacioso y acogedor espacio ha sido diseñado pensando en tu comodidad y estilo. La habitación cuenta con una cama matrimonial lujosa, suave ropa de cama y almohadas mullidas para garantizar una noche de descanso inigualable.",
@@ -92,7 +92,7 @@ button:focus {
 }
 
 @media (max-width: 800px) {
-  .imgC {
+  .aa {
     width: 100%;
     padding: 0;
     margin: 2px auto;
@@ -103,6 +103,9 @@ button:focus {
   }
   .d {
     width: 95%;
+  }
+  .contain{
+    margin:2px auto
   }
 }
 </style>

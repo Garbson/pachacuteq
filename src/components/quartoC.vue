@@ -4,13 +4,13 @@
       <headS class="h-screen"></headS>
       <div class="a bg-white p-8 rounded-lg shadow-lg flex justify-center">
         <preview class="p"></preview>
-        <div class="w-1/2 flex flex-col mx-5">
+        <div class="aa w-1/2 flex flex-col mx-5">
           <!-- Imagem do quarto -->
           <div></div>
           <img
             :src="item.imageUrl"
             :alt="item.title"
-            class="a w-full h-auto object-cover mb-4 rounded-md shadow-md"
+            class=" w-full h-auto object-cover mb-4 rounded-md shadow-md"
           />
   
           <!-- Informações -->
@@ -78,33 +78,35 @@
   </script>
   
   <style scoped>
-  input:focus,
-  button:focus {
-    border-color: #4a90e2;
-    outline: none;
+input:focus,
+button:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.contain {
+  border-radius: 10px;
+  padding: 1px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(226, 214, 214);
+}
+
+@media (max-width: 800px) {
+  .aa {
+    width: 100%;
+    padding: 0;
+    margin: 2px auto;
   }
-  
-  .contain {
-    border-radius: 10px;
-    padding: 1px;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid rgb(226, 214, 214);
+  .p {
+    order: 3;
+    margin-top: 15px;
   }
-  
-  @media (max-width: 800px) {
-    .imgC {
-      width: 100%;
-      padding: 0;
-      margin: 2px auto;
-    }
-    .p{
-      order: 3;
-      margin-top: 15px;
-    }
-    .d{
-      width: 95%;
-    }
+  .d {
+    width: 95%;
   }
-  </style>
-  
+  .contain{
+    margin:2px auto
+  }
+}
+</style>

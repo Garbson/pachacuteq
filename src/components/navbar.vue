@@ -24,7 +24,7 @@
           >
           <a
             class="font-bold text-md text-white hover:text-gray-400"
-            href="#equipe"
+            href="/hab"
             >HABITACIONES</a
           >
           <a

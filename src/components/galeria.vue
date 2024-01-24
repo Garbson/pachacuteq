@@ -25,11 +25,11 @@
   import { ref } from 'vue';
   
   const images = ref([
-  { name: 1, src: "img/quartoI.jpg", enlarged: false },
-    { name: 2, src: "img/quartoT.jpg", enlarged: false },
+  { name: 1, src: "img/g1.jpg", enlarged: false },
+    { name: 2, src: "img/g2.jpg", enlarged: false },
     { name: 3, src: "img/QuartoF.jpg", enlarged: false },
-    { name: 4, src: "img/quartoM.jpg", enlarged: false },
-    { name: 5, src: "img/quartoS.jpg", enlarged: false },
+    { name: 4, src: "img/quartoMM.jpg", enlarged: false },
+    { name: 5, src: "img/quartoQ.jpg", enlarged: false },
     { name: 6, src: "img/quartoT.jpg", enlarged: false }, 
 
   ]);

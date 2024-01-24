@@ -4,7 +4,7 @@
     <headS class="h-screen"></headS>
     <div class="a bg-white p-8 rounded-lg shadow-lg flex justify-center">
       <preview class="p"></preview>
-      <div class="w-1/2 flex flex-col mx-5">
+      <div class="aa w-1/2 flex flex-col mx-5">
         <!-- Imagem do quarto -->
         <div></div>
         <img
@@ -93,17 +93,20 @@ button:focus {
 }
 
 @media (max-width: 800px) {
-  .imgC {
+  .aa {
     width: 100%;
     padding: 0;
     margin: 2px auto;
   }
-  .p{
+  .p {
     order: 3;
     margin-top: 15px;
   }
-  .d{
+  .d {
     width: 95%;
+  }
+  .contain{
+    margin:2px auto
   }
 }
 </style>
