@@ -30,7 +30,7 @@ const router = createRouter({
       component: () => import('../views/habQviews.vue')
     },
     {
-      path: '/Triple',
+      path: '/triple',
       name: 'triple',
       component: () => import('../views/habTviews.vue')
     },
