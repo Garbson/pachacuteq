@@ -32,7 +32,7 @@ const router = createRouter({
     {
       path: '/triple',
       name: 'triple',
-      component: () => import('../views/habTviews.vue')
+      component: () => import('../views/habiTviews.vue')
     },
     {
       path: '/hab',
