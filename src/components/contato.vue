@@ -149,7 +149,7 @@ import { ref } from "vue";
 
 const name = "Heber Quispe";
 const position = "Gerente General";
-const phone = "+51 974566883";
+const phone = "084621482";
 const phone2 = "+51 123456789";
 const email = "hostalpachacuteqin@gmail.com";
 const email2 = "gerencia@hostalpachacuteqinn.com";
