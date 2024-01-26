@@ -1,6 +1,7 @@
 <template>
   <div class="container mx-auto mb-10">
-    <h1 class="text-3xl font-bold mb-8 text-center">Nuestros Cuartos</h1>
+    <div class="mt-7 mb-12">
+    <h1 class="a text-3xl font-bold  text-center ">Nuestros Cuartos</h1></div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5">
       <!-- Room Card 1 -->
       <div
@@ -101,6 +102,12 @@ const room1 = ref([
 </script>
 
 <style scoped>
+.a{
+  font-family: "Sevillana", cursive;
+  font-size: 500%;
+  font-weight: 500;
+  font-style: normal;
+}
 .container {
   max-width: 90%;
   max-height: 98%;

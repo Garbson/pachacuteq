@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-800 text-white py-8 mx-auto">
+  <footer class="bg-gray-800 text-white py-5 mx-auto">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Logo -->
@@ -42,7 +42,7 @@
 @media (max-width: 800px) {
   footer  {
     text-align: center;
-    margin-bottom: 1.5rem;
+   
   }
   .a  { 
     margin:0 auto ;

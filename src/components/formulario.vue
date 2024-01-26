@@ -1,11 +1,11 @@
 <template>
-  <!-- Formulário de Reserva -->
+  <!-- Formulario de Reserva -->
   <div class="f bg-slate-600 h-1/4 p-8 rounded">
     <div class="text-3xl font-serif mb-3 text-white">
-      Preço: {{ item.price }}
+      Precio: {{ item.price }}
     </div>
     <hr class="border-t border-orange-600 mb-4 w-1/2 opacity-80" />
-    <h2 class="text-3xl font-serif mb-4 text-white">Reserve agora</h2>
+    <h2 class="text-3xl font-serif mb-4 text-white">Reserve ahora</h2>
     <form class="space-y-4">
       <div class="mb-6">
         <label
@@ -28,14 +28,14 @@
           class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
           for="email"
         >
-          Email
+         email
         </label>
         <input
           v-model="email"
           name="email"
           class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
           type="email"
-          placeholder="Email"
+          placeholder="Correo electrónico"
         />
       </div>
 
@@ -73,7 +73,7 @@
           class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
           for="adults"
         >
-          Quantidade de Adultos
+          Cantidad de Adultos
         </label>
         <input
           v-model="adults"
@@ -89,14 +89,14 @@
           class="block uppercase tracking-wide text-white text-xs font-bold mb-2"
           for="children"
         >
-          Quantidade de Crianças
+          Cantidad de Niños
         </label>
         <input
           v-model="children"
           name="children"
           class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white"
           type="number"
-          placeholder="Crianças"
+          placeholder="Niños"
         />
       </div>
 
@@ -112,9 +112,10 @@
   </div>
 </template>
 
+
 <script setup>
 import { ref } from "vue";
-import axios from "axios";
+
 
 const nombre = ref("");
 const email = ref("");
