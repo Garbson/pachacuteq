@@ -20,7 +20,7 @@ const transporter = nodemailer.createTransport({
 
 app.post("/enviar-email", async (req, res) => {
   try {
-    const { name, email, assunto, text /* Adicione outros campos conforme necessário */ } =
+    const { name, email, assunto, text, /* Adicione outros campos conforme necessário */ } =
       req.body;
 
     const mailOptions = {
