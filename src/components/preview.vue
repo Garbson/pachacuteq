@@ -1,24 +1,29 @@
 <template>
-  <div class="ab mb-6 bg-slate-600 p-2 rounded w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4 mx-auto sm:mx-0">
-    <h2 class="text-4xl text-white font-serif mb-4">Habitaciones</h2>
-    <hr class="border-t border-orange-600 mb-4 w-1/2 mx-auto opacity-80" />
-    <div class="flex flex-col space-y-4">
+  <div class="ab mb-2 bg-quarto-escuro p-2 d-flex flex-col rounded-xl w-full">
+    <div>
+      <h2 class="text-4xl text-white font-serif mb-4">Habitaciones</h2>
+      <hr class="border-t border-orange-600 mb-4 w-full opacity-80" />
+    </div>
+    <div class="grid grid-cols-3 md:grid-cols-4 gap-4">
       <a
         v-for="otherRoom in otherRooms"
         :key="otherRoom.id"
         :href="otherRoom.h"
       >
         <div
-          class="other-room-preview flex mt-1 items-center p-2 border rounded-md shadow-xl"
+          class="other-room-preview mt-1 items-center p-2 mb-4 border rounded-md shadow-xl"
         >
           <img
             :src="otherRoom.imageUrl"
             :alt="otherRoom.title"
-            class="w-1/2 h-28 rounded-md mr-4"
+            class="w-full h-auto rounded-md mr-4"
           />
+          <hr class="border-t border-orange-600 mt-2 w-full opacity-80" />
           <div class="flex flex-col">
-            <p class="text-gray-700">{{ otherRoom.title }}</p>
-            <p class="text-green-500 font-semibold">{{ otherRoom.price }}</p>
+            <p class="text-gray-700 text-2xl mb-0">{{ otherRoom.title }}:</p>
+            <p class="text-orange-600 text-1xl font-bold">
+              {{ otherRoom.price }}
+            </p>
           </div>
         </div>
       </a>
@@ -30,40 +35,33 @@
 import { ref } from "vue";
 
 const otherRooms = ref([
-{
+  {
     id: 1,
-    imageUrl: "/img/quartoS.jpg",
+    imageUrl: "/img/quarto00.png",
     title: "Hab. simples",
-    price: "$60 soles/noche", 
-    h:"/simples"
+    price: "$60 Soles/Noche",
+    h: "/simples",
   },
   {
     id: 2,
-    imageUrl: "/img/quartoQ.jpg",
+    imageUrl: "/img/quarto03.png",
     title: "Hab. Cuaduple",
-    price: "$120 soles/noche", 
-    h:"/cuadruple"
+    price: "$120 Soles/Noche",
+    h: "/cuadruple",
   },
   {
     id: 3,
-    imageUrl: "/img/QuartoF.jpg",
+    imageUrl: "/img/quarto01.png",
     title: "Hab. Matrimonial",
-    price: "$70 soles/noche",
-    h:"/matrimonial"
-  },
-  {
-    id: 4,
-    imageUrl: "/img/quartoD.jpg",
-    title: "Hab. Doble",
-    price: "$70 soles/noche",
-    h:"/doble"
+    price: "$70 Soles/Noche",
+    h: "/matrimonial",
   },
   {
     id: 5,
-    imageUrl: "/img/quartoI.jpg",
+    imageUrl: "/img/quarto02.png",
     title: "Hab. Triple",
-    price: "$100 soles/noche",
-    h:"/triple"
+    price: "$100 Soles/Noche",
+    h: "/triple",
   },
 ]);
 </script>

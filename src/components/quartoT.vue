@@ -43,22 +43,20 @@
               </div>
             </div>
           </div>
-        </div>
-        <formulario></formulario>
+        </div>ß
       </div>
     </div>
   </template>
   
   <script setup>
-  import { ref } from "vue";
-  import navbar from "@/components/navbar.vue";
   import headS from "@/components/headS.vue";
-  import preview from "@/components/preview.vue";
-  import formulario from "@/components/formulario.vue";
+import navbar from "@/components/navbar.vue";
+import preview from "@/components/preview.vue";
+import { ref } from "vue";
   
   const item = ref({
     id: 1,
-    imageUrl: "/img/quartoI.jpg",
+    imageUrl: "/img/quarto02.png",
     title: "Habitación triple",
     description:
       "Descubre nuestro cuarto triple, perfecto para grupos o familias. Con tres camas individuales o una combinación de individuales y matrimoniales, este cuarto espacioso ofrece comodidad para todos. Decorado con estilo moderno, cuenta con un baño privado y comodidades prácticas para tu conveniencia. ¡Disfruta de una estancia cómoda y relajada!",

@@ -1,6 +1,5 @@
 <template>
-  
-  <div class="relative">
+  <div class="relative bg-slate-100">
     <div class="absolute inset-0 bg-black opacity-60 z-10 h-full"></div>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -9,7 +8,6 @@
       rel="stylesheet"
     />
 
-    
     <!-- Fundo com opacidade -->
 
     <q-carousel
@@ -24,8 +22,10 @@
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true"
     >
-      <q-carousel-slide :name="1" img-src="/img/img2.jpg" />
-      <q-carousel-slide :name="2" img-src="/img/img1.jpg" />
+      <q-carousel-slide :name="1" img-src="/img/quarto00.png" />
+      <q-carousel-slide :name="2" img-src="/img/quarto01.png" />
+      <q-carousel-slide :name="3" img-src="/img/quarto02.png" />
+      <q-carousel-slide :name="4" img-src="/img/quarto03.png" />
     </q-carousel>
 
     <!-- Título "La Habitaciones" no meio do carrossel -->

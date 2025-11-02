@@ -42,18 +42,16 @@
             </div>
           </div>
         </div>
-      </div>
-      <formulario></formulario>
+      </div>ß
     </div>
   </div>
 </template>
 
 <script setup>
-  import { ref } from "vue";
-  import navbar from "@/components/navbar.vue";
   import headS from "@/components/headS.vue";
-  import preview from "@/components/preview.vue";
-  import formulario from "@/components/formulario.vue";
+import navbar from "@/components/navbar.vue";
+import preview from "@/components/preview.vue";
+import { ref } from "vue";
 
   const item = ref({
     id: 1,

@@ -50,15 +50,15 @@
   </template>
   
   <script setup>
-  import { ref } from "vue";
-  import navbar from "@/components/navbar.vue";
-  import headS from "@/components/headS.vue";
-  import preview from "@/components/preview.vue";
   import formulario from "@/components/formulario.vue";
+import headS from "@/components/headS.vue";
+import navbar from "@/components/navbar.vue";
+import preview from "@/components/preview.vue";
+import { ref } from "vue";
   
   const item = ref({
     id: 1,
-    imageUrl: "img/quartoMM.jpg",
+    imageUrl: "img/quarto01.png",
     title: "Habitación matrimonial",
     description:
       "Sumérgete en la elegancia y el confort de nuestro cuarto matrimonial. Con una cama amplia y lujosa, este espacio ha sido cuidadosamente decorado para crear un ambiente acogedor. El cuarto matrimonial cuenta con un baño privado, armarios espaciosos y comodidades de calidad, ofreciéndote una experiencia de alojamiento excepcional. ¡Disfruta de una estancia inolvidable en este íntimo y elegante espacio!",

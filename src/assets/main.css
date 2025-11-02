@@ -4,62 +4,122 @@
 
 :root {
   /* Paleta baseada nas cores dos quartos 01 e 02 */
-  --quarto-madeira: #4A2C17;       /* Marrom escuro da madeira das camas */
-  --quarto-bordô: #8B1538;         /* Vermelho bordô dos tecidos andinos */
-  --quarto-bege: #F5F0E8;          /* Bege claro das paredes */
-  --quarto-terracota: #CD5C2E;     /* Laranja terracota dos detalhes */
-  --quarto-tapete: #8B4513;        /* Marrom dos tapetes */
-  --quarto-tecido: #A0522D;        /* Tom médio dos tecidos */
-  --quarto-neutro: #E8E2D5;        /* Tons neutros claros */
-  --quarto-escuro: #2F1B14;        /* Marrom muito escuro */
-  --quarto-dourado: #D4A574;       /* Tons dourados dos acabamentos */
-  --quarto-branco: #FEFEFE;        /* Branco puro */
-  --quarto-cinza: #8B8680;         /* Cinza suave */
-  --quarto-vermelho: #B22222;      /* Vermelho dos tecidos */
+  --quarto-madeira: #4a2c17; /* Marrom escuro da madeira das camas */
+  --quarto-bordô: #8b1538; /* Vermelho bordô dos tecidos andinos */
+  --quarto-bege: #f5f0e8; /* Bege claro das paredes */
+  --quarto-terracota: #cd5c2e; /* Laranja terracota dos detalhes */
+  --quarto-tapete: #8b4513; /* Marrom dos tapetes */
+  --quarto-tecido: #a0522d; /* Tom médio dos tecidos */
+  --quarto-neutro: #e8e2d5; /* Tons neutros claros */
+  --quarto-escuro: #2f1b14; /* Marrom muito escuro */
+  --quarto-dourado: #d4a574; /* Tons dourados dos acabamentos */
+  --quarto-branco: #fefefe; /* Branco puro */
+  --quarto-cinza: #8b8680; /* Cinza suave */
+  --quarto-vermelho: #b22222; /* Vermelho dos tecidos */
 
   /* Tons complementares extraídos das imagens */
-  --quarto-madeira-light: #6B3E24;
-  --quarto-madeira-dark: #3D1F0F;
-  --quarto-bordô-light: #A0284A;
-  --quarto-bordô-dark: #6B0F29;
+  --quarto-madeira-light: #6b3e24;
+  --quarto-madeira-dark: #3d1f0f;
+  --quarto-bordô-light: #a0284a;
+  --quarto-bordô-dark: #6b0f29;
 }
 
 /* Classes utilitárias baseadas nas cores dos quartos */
-.bg-quarto-madeira { background-color: var(--quarto-madeira); }
-.bg-quarto-bordô { background-color: var(--quarto-bordô); }
-.bg-quarto-bege { background-color: var(--quarto-bege); }
-.bg-quarto-terracota { background-color: var(--quarto-terracota); }
-.bg-quarto-tapete { background-color: var(--quarto-tapete); }
-.bg-quarto-tecido { background-color: var(--quarto-tecido); }
-.bg-quarto-neutro { background-color: var(--quarto-neutro); }
-.bg-quarto-escuro { background-color: var(--quarto-escuro); }
-.bg-quarto-dourado { background-color: var(--quarto-dourado); }
-.bg-quarto-branco { background-color: var(--quarto-branco); }
-.bg-quarto-cinza { background-color: var(--quarto-cinza); }
-.bg-quarto-vermelho { background-color: var(--quarto-vermelho); }
+.bg-quarto-madeira {
+  background-color: var(--quarto-madeira);
+}
+.bg-quarto-bordô {
+  background-color: var(--quarto-bordô);
+}
+.bg-quarto-bege {
+  background-color: var(--quarto-bege);
+}
+.bg-quarto-terracota {
+  background-color: var(--quarto-terracota);
+}
+.bg-quarto-tapete {
+  background-color: var(--quarto-tapete);
+}
+.bg-quarto-tecido {
+  background-color: var(--quarto-tecido);
+}
+.bg-quarto-neutro {
+  background-color: var(--quarto-neutro);
+}
+.bg-quarto-escuro {
+  background-color: var(--quarto-escuro);
+}
+.bg-quarto-dourado {
+  background-color: var(--quarto-dourado);
+}
+.bg-quarto-branco {
+  background-color: var(--quarto-branco);
+}
+.bg-quarto-cinza {
+  background-color: var(--quarto-cinza);
+}
+.bg-quarto-vermelho {
+  background-color: var(--quarto-vermelho);
+}
 
-.text-quarto-madeira { color: var(--quarto-madeira); }
-.text-quarto-bordô { color: var(--quarto-bordô); }
-.text-quarto-bege { color: var(--quarto-bege); }
-.text-quarto-terracota { color: var(--quarto-terracota); }
-.text-quarto-tapete { color: var(--quarto-tapete); }
-.text-quarto-tecido { color: var(--quarto-tecido); }
-.text-quarto-neutro { color: var(--quarto-neutro); }
-.text-quarto-escuro { color: var(--quarto-escuro); }
-.text-quarto-dourado { color: var(--quarto-dourado); }
-.text-quarto-branco { color: var(--quarto-branco); }
-.text-quarto-cinza { color: var(--quarto-cinza); }
-.text-quarto-vermelho { color: var(--quarto-vermelho); }
+.text-quarto-madeira {
+  color: var(--quarto-madeira);
+}
+.text-quarto-bordô {
+  color: var(--quarto-bordô);
+}
+.text-quarto-bege {
+  color: var(--quarto-bege);
+}
+.text-quarto-terracota {
+  color: var(--quarto-terracota);
+}
+.text-quarto-tapete {
+  color: var(--quarto-tapete);
+}
+.text-quarto-tecido {
+  color: var(--quarto-tecido);
+}
+.text-quarto-neutro {
+  color: var(--quarto-neutro);
+}
+.text-quarto-escuro {
+  color: var(--quarto-escuro);
+}
+.text-quarto-dourado {
+  color: var(--quarto-dourado);
+}
+.text-quarto-branco {
+  color: var(--quarto-branco);
+}
+.text-quarto-cinza {
+  color: var(--quarto-cinza);
+}
+.text-quarto-vermelho {
+  color: var(--quarto-vermelho);
+}
 
 /* Gradientes baseados nas cores dos quartos */
 .bg-gradient-quarto {
-  background: linear-gradient(135deg, var(--quarto-terracota) 0%, var(--quarto-madeira) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--quarto-terracota) 0%,
+    var(--quarto-madeira) 100%
+  );
 }
 
 .bg-gradient-quarto-suave {
-  background: linear-gradient(180deg, var(--quarto-bege) 0%, var(--quarto-neutro) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--quarto-bege) 0%,
+    var(--quarto-neutro) 100%
+  );
 }
 
 .bg-gradient-quarto-bordô {
-  background: linear-gradient(135deg, var(--quarto-bordô) 0%, var(--quarto-escuro) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--quarto-bordô) 0%,
+    var(--quarto-escuro) 100%
+  );
 }
