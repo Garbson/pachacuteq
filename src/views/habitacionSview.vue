@@ -5,8 +5,8 @@
     <Whats></Whats>
     </template>
     <script setup>
-     import quartoS from "@/components/quartoS.vue";
-    import contato from "@/components/contato.vue";
-    import Footer from "@/components/Footer.vue";
-    import Whats from "@/components/Whats.vue";
+     import contato from "@/components/contato.vue";
+import Footer from "@/components/Footer.vue";
+import quartoS from "@/components/quartoS.vue";
+import Whats from "@/components/Whats.vue";
     </script>

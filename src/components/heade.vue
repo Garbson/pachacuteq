@@ -1,23 +1,105 @@
 <template>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
-    href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <div class="relative bg-no-repeat h-screen bg-cover" style="background-image: url('img/cusco2.jpg')">
-    <div class="absolute inset-0 bg-black opacity-70"></div>
-    <navbar logo="img/logo.png"></navbar>
-    <div class="aa absolute inset-0 flex items-center justify-center text-white text-center ">
-      <div>
-        <h1 class="">Pachacuteq Inn</h1>
-      </div>
-    </div>
+  <div class="relative h-screen">
+    <q-carousel
+      animated
+      v-model="slide"
+      navigation
+      infinite
+      height="100%"
+      :autoplay="3000"
+      transition-prev="slide-right"
+      transition-next="slide-left"
+      @mouseenter="autoplay = false"
+      @mouseleave="autoplay = true"
+    >
+      <q-carousel-slide :name="1" img-src="/img/carrosel/cusco01.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', cursive"
+          >
+            Descubre la Capital del Imperio Inca
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" img-src="/img/carrosel/cusco02.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Vive Aventuras que Te Dejarán Sin Aliento
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="3" img-src="/img/carrosel/cusco03.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Historia Viva en el Corazón de los Andes
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" img-src="/img/carrosel/cusco04.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Noches Mágicas en Cusco Te Esperan
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="5" img-src="/img/carrosel/cusco05.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Paisajes que Parecen de Otro Mundo
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="6" img-src="/img/carrosel/cusco06.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Maravillas Ancestrales que Desafían el Tiempo
+          </div>
+        </div>
+      </q-carousel-slide>
+      <q-carousel-slide :name="7" img-src="/img/carrosel/cusco07.jpg">
+        <div class="absolute-full bg-black" style="opacity: 0.2"></div>
+        <div class="absolute-center custom-caption">
+          <div
+            class="text-h4 text-white text-bold"
+            style="font-family: 'Cinzel', serif"
+          >
+            Misterios Ancestrales Te Aguardan
+          </div>
+        </div>
+      </q-carousel-slide>
+    </q-carousel>
   </div>
 </template>
 
 <script setup>
-import navbar from "@/components/navbar.vue";
+import { ref } from "vue";
+const slide = ref(1);
 </script>
 
 <style scoped>

@@ -9,9 +9,7 @@
     >
       <!-- logo -->
       <div class="flex max-auto">
-        <a class="" href="/">
-          <img :src="logo" alt="" class="h-20"
-        /></a>
+        <a class="" href="/"> <img :src="logo" alt="" class="h-16" /></a>
       </div>
 
       <!-- nav-bar -->
@@ -23,12 +21,12 @@
             >INICIO</a
           >
           <a
-            class="font-bold text-md text-white hover:text-gray-400"
+            class="font-bold text-md text-white hover:text-quarto-dourado"
             href="/hab"
             >HABITACIONES</a
           >
           <a
-            class="font-bold text-md text-white hover:text-gray-400"
+            class="font-bold text-md text-white hover:text-quarto-dourado"
             href="#contato"
             >CONTACTO</a
           >
@@ -45,10 +43,10 @@ defineProps({
   logo: String,
 });
 
-const navClass = ref("bg-green-900");
+const navClass = ref("bg-quarto-madeira");
 
 const updateVisibility = () => {
-  navClass.value = window.scrollY > 200 ? "bg-gray-800" : "bg-transparent";
+  navClass.value = window.scrollY > 200 ? "bg-quarto-escuro" : "bg-transparent";
 };
 
 onMounted(() => {

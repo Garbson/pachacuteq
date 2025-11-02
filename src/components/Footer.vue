@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-gray-800 text-white py-5 mx-auto">
+  <footer class="bg-quarto-escuro text-quarto-branco py-5 mx-auto">
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Logo -->
@@ -10,18 +10,18 @@
         <!-- Informações da Empresa -->
         <div>
           <h3 class="text-xl font-semibold mb-4">Sobre Nosotros</h3>
-          <p class="text-gray-400 mb-2">Somos una empresa dedicada a la hostelería</p>
-          <p class="text-gray-400">
+          <p class="text-quarto-dourado mb-2">Somos una empresa dedicada a la hostelería</p>
+          <p class="text-quarto-dourado">
             HOSTAL PACHACUTEQ INN <br>Alameda Pachacuteq N° -Cusco-Perú
           </p>
-          <p class="text-gray-400">hostalpachacuteqin@gmail.com</p>
+          <p class="text-quarto-dourado">hostalpachacuteqin@gmail.com</p>
         </div>
 
         <!-- Redes Sociais -->
         <div>
           <h3 class="text-xl font-semibold mb-4">Redes Sociales</h3>
          
-            <a href="#" class="text-gray-400 hover:text-white transition">
+            <a href="#" class="text-quarto-dourado hover:text-quarto-branco transition">
               <div class="aa"><img class="w-10" src='/img/facebook.png' alt=""></div>
             </a>
           
@@ -29,7 +29,7 @@
       </div>
 
       <!-- Direitos Autorais -->
-      <div class="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+      <div class="border-t border-quarto-terracota mt-8 pt-6 text-center text-quarto-dourado">
         <p>
           &copy; 2024 Hostal Pachacuteq Inn ®. Todos los derechos reservados.
         </p>

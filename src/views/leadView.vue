@@ -1,4 +1,5 @@
 <template>
+ <navbar logo="img/logo.png"></navbar>
 <heade id="inicio"></heade>
 <bodye></bodye>
 <contato id="contato"></contato>
@@ -6,9 +7,10 @@
 <Whats></Whats>
 </template>
 <script setup>
-import heade from "@/components/heade.vue";
 import bodye from "@/components/bodye.vue";
 import contato from "@/components/contato.vue";
 import Footer from "@/components/Footer.vue";
+import heade from "@/components/heade.vue";
+import navbar from "@/components/navbar.vue";
 import Whats from '../components/Whats.vue';
 </script>
